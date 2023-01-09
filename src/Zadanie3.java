@@ -10,7 +10,8 @@ public class Zadanie3 {
     }
 
     public static void addNumber(String s, Integer i){
-        if (test.keySet().equals(i)){
+        if (test.get(s).equals(i) && test.get(s).equals(null)){
+
             throw new RuntimeException(test + " ключ уже есть или значения совпадают");
         }
         test.put(s,i);
